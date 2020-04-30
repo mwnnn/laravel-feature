@@ -22,7 +22,7 @@ class FeatureManagerTest extends TestCase
         parent::setUp();
 
         $this->repositoryMock = $this->getMockBuilder(FeatureRepositoryInterface::class)
-            ->setMethods(['save', 'remove', 'findByName', 'enableFor', 'disableFor', 'isEnabledFor'])
+            ->setMethods(['save', 'remove', 'findByName', 'enableFor', 'disableFor', 'isEnabledFor', 'all', 'findById'])
             ->disableOriginalConstructor()
             ->getMock();
 
