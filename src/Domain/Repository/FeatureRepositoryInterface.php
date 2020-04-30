@@ -18,4 +18,8 @@ interface FeatureRepositoryInterface
     public function disableFor($featureName, FeaturableInterface $featurable);
 
     public function isEnabledFor($featureName, FeaturableInterface $featurable);
+
+    public function all();
+
+    public function findById(int $id);
 }

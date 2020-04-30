@@ -94,4 +94,14 @@ class EloquentFeatureRepository implements FeatureRepositoryInterface
 
         return ($model->is_enabled) ? true : $featurable->hasFeature($featureName);
     }
+
+    public function all()
+    {
+        return Model::all();
+    }
+
+    public function findById(int $id)
+    {
+        return Model::find($id);
+    }
 }
